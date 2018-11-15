@@ -7,46 +7,16 @@ namespace csharp
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("OMGHAI!");
-
-            IList<MyItem> Items = new List<MyItem>{
-                new MyItem {Name = "+5 Dexterity Vest", SellIn = 10, Quality = 20},
-                new AgedCheese {Name = "Aged Brie", SellIn = 2, Quality = 0},
-                new MyItem {Name = "Elixir of the Mongoose", SellIn = 5, Quality = 7},
-                new LegendaryItem {Name = "Sulfuras, Hand of Ragnaros", SellIn = 0, Quality = 80},
-                new LegendaryItem {Name = "Sulfuras, Hand of Ragnaros", SellIn = -1, Quality = 80},
-                new BackstagePass
-                {
-                    Name = "Backstage passes to a TAFKAL80ETC concert",
-                    SellIn = 15,
-                    Quality = 20
-                },
-                new BackstagePass
-                {
-                    Name = "Backstage passes to a TAFKAL80ETC concert",
-                    SellIn = 10,
-                    Quality = 49
-                },
-                new BackstagePass
-                {
-                    Name = "Backstage passes to a TAFKAL80ETC concert",
-                    SellIn = 5,
-                    Quality = 49
-                },
-				// this conjured item does not work properly yet
-				new ConjuredItem {Name = "Conjured Mana Cake", SellIn = 3, Quality = 6}
-            };
-
-            var app = new GildedRose(Items);
-
+            var app = new GildedRose();
 
             for (var i = 0; i < 31; i++)
             {
                 Console.WriteLine("-------- day " + i + " --------");
                 Console.WriteLine("name, sellIn, quality");
-                for (var j = 0; j < Items.Count; j++)
+                var gildedRoseItems = app.Items;
+                foreach (var item in gildedRoseItems)
                 {
-                    System.Console.WriteLine(Items[j]);
+                    System.Console.WriteLine(item);
                 }
                 Console.WriteLine("");
                 app.UpdateStock();
