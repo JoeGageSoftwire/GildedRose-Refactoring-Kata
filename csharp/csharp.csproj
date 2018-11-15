@@ -61,10 +61,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgedCheese.cs" />
     <Compile Include="ApprovalTest.cs" />
+    <Compile Include="BackstagePass.cs" />
+    <Compile Include="ConjuredItem.cs" />
     <Compile Include="GildedRose.cs" />
     <Compile Include="GildedRoseTest.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="LegendaryItem.cs" />
+    <Compile Include="MyItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

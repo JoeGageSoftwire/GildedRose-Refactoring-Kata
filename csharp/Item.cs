@@ -1,4 +1,6 @@
-﻿namespace csharp
+﻿using System.Runtime.CompilerServices;
+
+namespace csharp
 {
     public class Item
     {
@@ -9,6 +11,6 @@
         public override string ToString()
         {
             return this.Name + ", " + this.SellIn + ", " + this.Quality;
-        }  
+        }
     }
 }
