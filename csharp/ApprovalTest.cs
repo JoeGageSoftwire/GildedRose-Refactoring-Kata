@@ -11,7 +11,7 @@ namespace csharp
         [Test]
         public void ThirtyDays()
         {
-            var lines = File.ReadAllLines(@"C:\Users\JHG\Work\Training\GildedRose-Refactoring-Kata\csharp\ThirtyDays.txt");
+            var lines = File.ReadAllLines(@"C:\Users\JHG\Work\Training\GildedRose-Refactoring-Kata\csharp\ThirtyDaysFixed.txt");
 
             StringBuilder fakeoutput = new StringBuilder();
             Console.SetOut(new StringWriter(fakeoutput));
